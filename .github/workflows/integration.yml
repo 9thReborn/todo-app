@@ -13,14 +13,13 @@ jobs:
     strategy:
       matrix:
         node-version: [16.x, 18.x]
-
     steps:
-      -uses: actions/checkout@v2
-      -name: use Node.js ${{matrix.node-versions}}
+      - uses: actions/checkout@v2
+      - name: use Node.js ${{matrix.node-versions}}
        uses: actions/setup-node@v1
        with: 
          node-version: ${{matrix.node-versions}}
-      -name: yarn install and test
+      - name: yarn install and test
        run:
          yarn install
          yarn test
