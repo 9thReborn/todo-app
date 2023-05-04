@@ -1,4 +1,4 @@
-Name: Node Github CI/CD
+name: Node Github CI/CD
 
 on:
   push:
